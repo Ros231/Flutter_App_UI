@@ -2,13 +2,20 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/Views/appA/Home_appA.dart';
+import 'package:flutter_speed_ui_app/Views/appE/Home_appE.dart';
+import 'package:flutter_speed_ui_app/Views/appA/A01PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appB/Home_appB.dart';
 import 'package:flutter_speed_ui_app/Views/appC/Home_appC.dart';
+import 'package:flutter_speed_ui_app/Views/appD/Home_appD.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({super.key});
 
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -99,7 +106,7 @@ class Home extends StatelessWidget {
             ),
             //App D
             ElevatedButton(onPressed: (){Navigator.push(context, 
-            MaterialPageRoute(builder: (context) => (Appc())),
+            MaterialPageRoute(builder: (context) => (Appd())),
             );
             }, child: Text(
               "Go to D Page",
@@ -123,7 +130,7 @@ class Home extends StatelessWidget {
             ),
             //App E
             ElevatedButton(onPressed: (){Navigator.push(context, 
-            MaterialPageRoute(builder: (context) => (Appc())),
+            MaterialPageRoute(builder: (context) => (Appe())),
             );
             }, child: Text(
               "Go to E Page",
@@ -151,4 +158,4 @@ class Home extends StatelessWidget {
       ),
     );
   }
-}
+  }
