@@ -21,7 +21,7 @@ class _SpeedUIAppState extends State<SpeedUIApp> {
       debugShowCheckedModeBanner: false,
       home: Home(),
       theme: ThemeData(
-        textTheme: GoogleFonts.kanitTextTheme(
+        textTheme: GoogleFonts.poppinsTextTheme(
           Theme.of(context).textTheme,
         ),
       ),

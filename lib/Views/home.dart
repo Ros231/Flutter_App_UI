@@ -4,8 +4,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_speed_ui_app/Views/appE/Home_appE.dart';
 import 'package:flutter_speed_ui_app/Views/appA/A01PageUI.dart';
-import 'package:flutter_speed_ui_app/Views/appB/Home_appB.dart';
-import 'package:flutter_speed_ui_app/Views/appC/Home_appC.dart';
+import 'package:flutter_speed_ui_app/Views/appB/%E0%B8%BAB01PageUI.dart';
+import 'package:flutter_speed_ui_app/Views/appC/%E0%B8%BAC01PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appD/Home_appD.dart';
 
 class Home extends StatefulWidget {

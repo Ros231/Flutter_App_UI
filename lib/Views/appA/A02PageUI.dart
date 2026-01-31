@@ -37,7 +37,7 @@ class _SigninAState extends State<SigninA> {
               ),
               ),
 
-              Container(
+              SizedBox(
                 width: MediaQuery.of(context).size.width * 0.8,
                 child: Text(
               '''Consequat dolore occaecat duis cupidatat velit et. Duis ad consectetur amet commodo sit aliqua ex cillum. 
