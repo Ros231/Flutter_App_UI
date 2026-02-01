@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/Views/appC/%E0%B8%BAC03PageUI.dart';
+import 'package:flutter_speed_ui_app/Views/appC/%E0%B8%BAC02PageUI.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
-class SigninC extends StatefulWidget {
-  const SigninC({super.key});
+class SignupC extends StatefulWidget {
+  const SignupC({super.key});
 
   @override
-  State<SigninC> createState() => _SigninCState();
+  State<SignupC> createState() => _SignupCState();
 }
 
-class _SigninCState extends State<SigninC> {
+class _SignupCState extends State<SignupC> {
+
+bool ischeck = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,19 +20,24 @@ class _SigninCState extends State<SigninC> {
       body: Center(
         child: Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 150), 
-                child: Image.asset(
-                  "assets/icons/H_logo2.png",
-                  height: 60,
-                  width: 60,
-                ),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [               
+                Padding(
+                  padding: const EdgeInsets.only(top: 40, right: 40), 
+                    child: Image.asset(
+                      "assets/icons/H_logo2.png",
+                      height: 25,
+                      width: 25,
+                    ),
+                  ),
+              ],
+            ),
 
               Padding(
                 padding: const EdgeInsets.only(top: 70),
                 child: Text(
-                  "Sign in to your account",
+                  "Create your account",
                   style: TextStyle(
                     color: Color(0xff000000),
                     fontSize: 26,
@@ -44,6 +52,38 @@ class _SigninCState extends State<SigninC> {
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
+
+                      Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        child: Row(
+                          children: [
+                            Text(
+                              "Name",
+                              style: TextStyle(
+                                color: Color(0xff6F6F6F),  
+                              ), 
+                            ),
+                          ],
+                        ),
+                      ),
+                
+                      TextField(
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(                          
+                            borderSide: BorderSide.none
+                          ),
+                
+                          hintText: "ex: jon smith",
+                          hintStyle: TextStyle(
+                            color: Color(0xff888888).withAlpha(90),
+                            fontSize: 16, 
+                          ),
+                
+                          filled: true,
+                          fillColor: Color(0xffF5F5F5),
+                        ),
+                      ),
+
                       Padding(
                         padding: const EdgeInsets.symmetric(vertical: 10),
                         child: Row(
@@ -52,7 +92,7 @@ class _SigninCState extends State<SigninC> {
                               "Email",
                               style: TextStyle(
                                 color: Color(0xff6F6F6F),  
-                              ),
+                              ), 
                             ),
                           ],
                         ),
@@ -83,7 +123,7 @@ class _SigninCState extends State<SigninC> {
                               "Password",
                               style: TextStyle(
                                 color: Color(0xff6F6F6F),  
-                              ),                           
+                              ),                            
                             ),
                           ],
                         ),
@@ -107,7 +147,71 @@ class _SigninCState extends State<SigninC> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(top: 50),
+                        padding: const EdgeInsets.symmetric(vertical: 10),
+                        child: Row(                       
+                          children: [
+                            Text(
+                              "Confirm Password",  
+                              style: TextStyle(
+                                color: Color(0xff6F6F6F),  
+                              ),                         
+                            ),
+                          ],
+                        ),
+                      ),
+                      TextField(
+                        obscureText: true,
+                        decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide.none
+                          ),
+                
+                          hintText: "***********",
+                          hintStyle: TextStyle(
+                            color: Color(0xff888888).withAlpha(90),
+                            fontSize: 16,                                                         
+                          ),
+                
+                          filled: true,
+                          fillColor: Color(0xffF5F5F5),
+                        ),
+                      ),
+
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Checkbox(value: ischeck, onChanged: (bool? value) {
+                                setState(() {
+                                  ischeck = value!;
+                                });
+                          }, 
+                            checkColor: Color(0xff00B140), 
+                            activeColor: Colors.transparent, 
+                            
+                            side: BorderSide(
+                              color: Color(0xff00B140),
+                              width: 1,
+                            ),
+                          ),
+
+                          Text(
+                            "I understood the"
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.only(left: 5),
+                            child: Text(
+                              "terms & policy",
+                              style: TextStyle(
+                                color: Color(0xff00B140),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+
+                      Padding(
+                        padding: const EdgeInsets.only(top: 10),
                         child: ElevatedButton(onPressed: (){},
                             style: ElevatedButton.styleFrom(
                               backgroundColor: Color(0xff00B140),
@@ -126,12 +230,12 @@ class _SigninCState extends State<SigninC> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 20),
-                          child: Text(
-                            "or sign in with",
-                            style: TextStyle(
-                              color: Color(0xff888888),
-                            ),
+                        padding: const EdgeInsets.symmetric(vertical: 15),
+                        child: Text(
+                          "or sign up with",
+                          style: TextStyle(
+                            color: Color(0xff888888),
+                          ),
                         ),
                       ),
 
@@ -195,35 +299,33 @@ class _SigninCState extends State<SigninC> {
                           )
                         ],
                       ),
-
                       Padding(
                         padding: const EdgeInsets.only(top: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                              Text(
-                                "Don't have an account?",
-                                style: TextStyle(
-                                  color: Color(0xff888888),
-                                ),
-                            ),
-                        
-                          Padding(
-                          padding: const EdgeInsets.only(left: 5),
-                            child: InkWell(
-                               onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => (SignupC()))),
-                                child: Text(
-                                    "SIGN UP",
-                                style: TextStyle(
-                                color: Color(0xff00B140),
+                            Text(
+                              "Have an account?",
+                              style: TextStyle(
+                                color: Color(0xff888888),
                               ),
                             ),
-                          ),
-                        )
+                        
+                            Padding(
+                              padding: const EdgeInsets.only(left: 5),
+                              child: InkWell(
+                                onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context) => (SigninC()))),
+                                child: Text(
+                                  "SIGN IN",
+                                  style: TextStyle(
+                                    color: Color(0xff00B140),
+                                  ),
+                                ),
+                              ),
+                            )
                           ],
                         ),
                       ),
-                       
                     ],  
                   ),
                 ),

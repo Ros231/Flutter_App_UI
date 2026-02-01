@@ -43,7 +43,7 @@ class _SignupBState extends State<SignupB> {
               ),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 60),
+              padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
                child: Column(children: [
                TextField(
@@ -74,6 +74,7 @@ class _SignupBState extends State<SignupB> {
               
                   TextField(
                   keyboardType: TextInputType.visiblePassword,
+                  obscureText: true,
               
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
@@ -99,6 +100,7 @@ class _SignupBState extends State<SignupB> {
 
                   TextField(
                   keyboardType: TextInputType.visiblePassword,
+                  obscureText: true,
               
                   decoration: InputDecoration(
                     border: OutlineInputBorder(

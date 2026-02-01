@@ -61,7 +61,7 @@ class _Login_BState extends State<Login_B> {
               ),
 
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 60),
+              padding: const EdgeInsets.symmetric(horizontal: 40),
               child: Container(
                child: Column(children: [
                TextField(
@@ -92,7 +92,8 @@ class _Login_BState extends State<Login_B> {
               
                   TextField(
                   keyboardType: TextInputType.visiblePassword,
-              
+                  obscureText: true,
+
                   decoration: InputDecoration(
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),

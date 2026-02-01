@@ -77,6 +77,7 @@ class _SigninAState extends State<SigninA> {
 
                 TextField(
                 keyboardType: TextInputType.visiblePassword,
+                obscureText: true,
 
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -210,8 +211,9 @@ class _SigninAState extends State<SigninA> {
                           color: Color(0xfff7ede2)
                         ),
                         child: IconButton(
-                          icon: Icon(
+                          icon: FaIcon(
                             FontAwesomeIcons.facebook,
+                            color: Color(0xff0085FF),
                             size: 30,
                           ),
                           onPressed: (){},

@@ -21,6 +21,7 @@ class _AppcState extends State<Appc> {
     );
     super.initState();
   }
+  @override
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,

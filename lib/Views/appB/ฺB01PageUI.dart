@@ -49,7 +49,7 @@ class _AppbState extends State<Appb> {
                 ),
 
                  Padding(
-                   padding: const EdgeInsets.symmetric(vertical: 150),
+                   padding: const EdgeInsets.only(top: 100),
                    child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                      children: [
