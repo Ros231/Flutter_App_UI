@@ -1,9 +1,7 @@
 import 'package:fluentui_system_icons/fluentui_system_icons.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/Views/appC/%E0%B8%BAC03PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appD/D03PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appD/D04PageUI.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginD extends StatefulWidget {
   const LoginD({super.key});

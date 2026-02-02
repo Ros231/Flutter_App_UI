@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/Views/appD/D02PageUI.dart';
-import 'package:flutter_speed_ui_app/Views/appD/D05PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appD/D07PageUI.dart';
 
 class CreateNewPassword extends StatefulWidget {

@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/Views/appC/%E0%B8%BAC02PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appD/D02PageUI.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class RegisterD extends StatefulWidget {
   const RegisterD({super.key});

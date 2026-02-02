@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_speed_ui_app/Views/appD/D02PageUI.dart';
 import 'package:flutter_speed_ui_app/Views/appD/D06PageUI.dart';
 
 class OTPVerificationD extends StatefulWidget {
@@ -84,7 +83,7 @@ class _OTPVerificationDState extends State<OTPVerificationD> {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Container(
+                          SizedBox(
                             width: 80,
                             height: 70,
                             child: TextField(
@@ -106,7 +105,7 @@ class _OTPVerificationDState extends State<OTPVerificationD> {
                             ),
                           ),
 
-                          Container(
+                          SizedBox(
                             width: 80,
                             height: 70,
                             child: TextField(
@@ -128,7 +127,7 @@ class _OTPVerificationDState extends State<OTPVerificationD> {
                             ),
                           ),
 
-                          Container(
+                          SizedBox(
                             width: 80,
                             height: 70,
                             child: TextField(
@@ -150,7 +149,7 @@ class _OTPVerificationDState extends State<OTPVerificationD> {
                             ),
                           ),
 
-                          Container(
+                          SizedBox(
                             width: 80,
                             height: 70,
                             child: TextField(
